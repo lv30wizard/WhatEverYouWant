@@ -18,16 +18,16 @@
         <tr>
           <th>Name</th>
           <th>Email</th>
-          <th>Email</th>
-          <th>Email</th>
-          <th>Email</th>
+          <th>Number</th>
+          <th>Remove</th>
+          <th>Edit</th>
         </tr>
       </thead>
         <tbody>
           <tr ng-repeat="contact in contactlist">
-            <td>{{contact.name}}</td>
-            <td>{{contact.Email}}</td>
-            <td>{{contact.Number}}</td>
+            <td>{contact.name}</td>
+            <td>{contact.Email}</td>
+            <td>{contact.Number}</td>
             <td><button class="btn btn-danger" ng-click="remove(contact._id)">Remove</button></td>
             <td><button class="btn btn-warning" ng-click="edit(contact._id)">Edit</button></td>
 
